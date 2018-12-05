@@ -1,0 +1,28 @@
+<view class="body-container">
+    <view class="full-box">
+        <canvas canvasId="imgCanvas" style="width: {{width}}px; height: {{height}}px;"></canvas>
+    </view>
+    <view class="color-container" wx:if="{{color.main&&showColorDetail}}">
+        <view bindtap="setClipboard" data-type="rgba" style="width: 150rpx;height: 150rpx;background-color: {{color.main}}"></view>
+        <view class="desc">
+            <view bindtap="setClipboard" class="row" data-type="rgba">
+                <text class="name">RGB</text>
+                <text class="value">{{color.rgba}}</text>
+            </view>
+            <view bindtap="setClipboard" class="row" data-type="hex">
+                <text class="name">HEX</text>
+                <text class="value">{{color.hex}}</text>
+            </view>
+            <view bindtap="setClipboard" class="row" data-type="hsl">
+                <text class="name">HSL</text>
+                <text class="value">{{color.hsl}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="palettes" wx:if="{{palette&&showColorDetail}}">
+        <view bindtap="queryMain" class="palette-item {{item==colorSelected?'active':'deactive'}}" data-color="{{item}}" style="background-color: rgb({{item}}); border-color:rgb({{computedBorder}})" wx:for="{{palette}}" wx:key="{{item}}"></view>
+    </view>
+    <view class="btn-row">
+        <button bindtap="saveImage" wx:if="{{showSaveBtn}}">保存色卡</button>
+    </view>
+</view>

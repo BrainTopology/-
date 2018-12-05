@@ -1,0 +1,63 @@
+.container-palettes {
+    height: 100%;
+    background-color: #eee;
+    padding: 10rpx;
+}
+
+.container-palettes .palette-lists {
+    height: 100%;
+}
+
+.container-palettes .palette-lists .palette-item {
+    background-color: #fff;
+    padding: 9rpx;
+    margin: 12rpx;
+    border-radius: 10rpx;
+}
+
+.container-palettes .palette-lists .palette-item .desc {
+    margin: 8rpx 20rpx;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+}
+
+.container-palettes .palette-lists .palette-item .desc .right {
+    display: flex;
+    align-items: center;
+}
+
+.container-palettes .palette-lists .palette-item .desc .date {
+    margin-right: 20rpx;
+}
+
+.container-palettes .palette-lists .palette-item .desc .icon {
+    margin-right: 8rpx;
+    margin-left: 20rpx;
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.container-palettes .color-lists {
+    background-color: #fff;
+    position: relative;
+    height: 100rpx;
+    border: 10rpx solid #fff;
+    overflow: hidden;
+}
+
+.container-palettes .color-lists .color-item {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 26%;
+    border-radius: 50rpx;
+    box-shadow: -2px 0 1px #eee;
+}
+
+.container-palettes .footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30rpx;
+}

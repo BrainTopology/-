@@ -1,0 +1,21 @@
+<view class="container-palettes">
+    <scroll-view scrollY bindscrolltolower="lower" class="palette-lists">
+        <view class="palette-item" wx:for="{{palettes}}" wx:for-index="paletteIdx" wx:for-item="palette" wx:key="{{palette._id}}">
+            <view catchtap="goToDetail" class="color-lists" data-id="{{paletteIdx}}">
+                <view class="color-item" style="background-color:rgb({{color}});left: {{colorIdx*95+8}}rpx" wx:for="{{palette.palette}}" wx:for-index="colorIdx" wx:for-item="color" wx:key="{{color}}"></view>
+            </view>
+            <view catchtap="goToDetail" class="desc" data-id="{{paletteIdx}}">
+                <view class="left">
+                    <text class="date">{{palette.createTime}}</text>
+                </view>
+                <view class="right">
+                    <image class="icon" mode="aspectFit" src="/assets/images/detail/view.png"></image>{{palette.view}}<image class="icon" mode="aspectFit" src="/assets/images/detail/download.png"></image>{{palette.download}}</view>
+            </view>
+            <ad style="margin-top: 10rpx;" unitId="adunit-4cca58d922f867d3" wx:if="{{paletteIdx%10==6}}"></ad>
+        </view>
+        <view class="footer">
+            <text wx:if="{{page<100}}">加载中~</text>
+            <text wx:else>到底了~</text>
+        </view>
+    </scroll-view>
+</view>

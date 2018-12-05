@@ -1,0 +1,18 @@
+/* pages/makeup/index.wxss */
+input{
+  font-size: 20px;
+  height: 30rpx;
+  font-family: '微软雅黑';
+  font-weight: bold;
+}
+placeholder{
+  color: #ccc;
+  font-family: '微软雅黑';
+  font-size: 15px;
+}
+button{
+  width: 90%;
+  margin-top: 30rpx;
+  background-color: #090000;
+  color: #FFF;
+}

@@ -1,0 +1,33 @@
+<view>
+    <view style="text-align: center;width: 100%;" wx:if="{{!tempFilePaths}}">
+        <text style="font-size: 35rpx;">点击上方区域选择图片</text>
+    </view>
+    <block wx:else>
+        <view class="color-container {{iPad?'iPad':''}}">
+            <canvas canvasId="palette" style="width: 90px; height: 90px;"></canvas>
+            <view class="desc">
+               
+                <view bindtap="setClipboard" class="row" data-type="hsl">
+                    <text class="name">HSL</text>
+                    <text class="value">{{color.hsl}}</text>
+                    </view>
+                   
+                   
+                   
+                    
+                     <text>拖动图片令采集器对准面部</text>
+                    <text>点击上方色值</text>
+            </view>
+            <view bindtap="setClipboard" data-type="rgba" style="width: 90px;height:90px;background-color: {{color.main}};"></view>
+        </view>
+        <view class="full-box">
+            <canvas canvasId="imgCanvas" style="width: {{sysInfo.screenWidth}}px; height: {{sysInfo.screenWidth}}px;"></canvas>
+            <canvas disableScroll bindlongtap="start" bindtouchcancel="end" bindtouchend="end" bindtouchmove="move" bindtouchstart="start" canvasId="crossCanvas" style="width: {{sysInfo.screenWidth}}px; height: {{sysInfo.screenWidth}}px; position: absolute;"></canvas>
+        </view>
+        <button bindtap="chooseImage">上传照片</button>
+         <view bindtap="toast" class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <button bindtap="toast">下一步</button>
+ </block>
+</view>

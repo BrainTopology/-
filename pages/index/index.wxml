@@ -1,0 +1,38 @@
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+<view class="container flex-container">
+    <view class="btn-container">
+        
+                <view class="row">
+            <navigator url="/pages/picker/index">
+                <button hoverClass="navigator-hover">
+                    <image mode="widthFix" src="/assets/images/picker/ana.png"></image>
+                    <text>GO~</text>
+                </button>
+            </navigator>
+        </view>
+    </view>
+    <view class="contact-me">
+       
+    </view>
+</view>

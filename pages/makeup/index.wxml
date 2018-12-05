@@ -1,0 +1,40 @@
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+  <view style="display:flex;">
+    <input name="userName" maxlength='3' placeholder="请粘贴拷贝色值！" />
+  </view>
+  <view style="display:flex;margin-top:30px;">
+    <button style="width:30%;" formType="submit" >推荐get</button>
+    </view>
+</form>
+
+<view>{{userName}}</view>
+<view wx:if="{{userName<10&&userName>5}}">
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/8M~%25B(%60BMZOOCVD8B97%7B2C7.jpg" mode="aspectFit"> 
+</image>
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/AT3(47INYFDE1IT0BBTH7~6.jpg" mode="aspectFit"> 
+</image>
+</view>
+<view wx:if="{{userName>10&&userName<15}}">
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/XW%5BV)(Z%25SNEQVE05M4%5D1_ZR.jpg" mode="aspectFit"> 
+</image>
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/DTH%60Z2%7BJ8%40Z%5D(OGA%7DJT3KFE.jpg" mode="aspectFit"> 
+</image>
+</view>
+<view wx:if="{{userName>15&&userName<20}}">
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/D%5D31LI688BOJ3%246%40%40X%5B5NQ3.jpg" mode="aspectFit"> 
+</image>
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/ZD~3G11I9UG3_MCMFK904AM.jpg" mode="aspectFit"> 
+</image>
+</view>
+<view wx:if="{{userName>20&&userName<30}}">
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/J6%5B_Q%24%7DOCMBEP7W)8NY%5D08E.jpg" mode="aspectFit"> 
+</image>
+</view>
+<view wx:if="{{userName>30&&userName<40}}">
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/C%5D~Z11%40G~J%7BI)COXMHZSCHF.jpg" mode="aspectFit"> 
+</image>
+</view>
+<view wx:if="{{userName>40}}">
+<image class="image_frame" src="https://e132-1257808062.cos.ap-beijing.myqcloud.com/XKM8O%5D%406CINDV88JU%24%25W9SM.jpg" mode="aspectFit"> 
+</image>
+</view>

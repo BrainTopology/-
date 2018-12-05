@@ -1,0 +1,41 @@
+.full-box {
+    height: 680rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rpx;
+}
+
+.full-box image {
+    width: 150rpx;
+}
+
+button {
+    margin: 20rpx;
+}
+
+.color-container {
+    display: flex;
+    padding: 0 10rpx;
+}
+
+.color-container .desc {
+    flex: 1;
+}
+
+.color-container .desc .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rpx;
+    margin-bottom: 32rpx;
+    font-size: 28rpx;
+}
+
+.color-container .desc .row .name {
+    font-weight: 700;
+}
+
+.color-container.iPad .desc .row {
+    margin-bottom: 1rpx;
+}
